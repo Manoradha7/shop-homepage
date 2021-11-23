@@ -89,7 +89,7 @@ export default function App() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const [show,setShow]=useState('!show')
+  const [show,setShow]=useState('show')
   return (
     <div className="App">
       <AppBar position="static" className="app-bar">
@@ -167,7 +167,7 @@ export default function App() {
           
         </Toolbar>
       </AppBar>
-      {show ? (<div className="components1">
+      {show ? "":(<div className="components1">
             <Button
               variant="text"
               style={{ color: "black" }}
@@ -207,7 +207,7 @@ export default function App() {
               <MenuItem onClick={handleClose}>Popular Items</MenuItem>
               <MenuItem onClick={handleClose}>New Arrivals</MenuItem>
             </Menu>
-          </div>):""}
+          </div>)}
       <header className="header-content">
         <h2 className="title">Shop in style</h2>
         <p className="sub-title">With this shop homepage template</p>
