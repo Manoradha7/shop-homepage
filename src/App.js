@@ -164,17 +164,20 @@ export default function App() {
           >
             <MenuIcon />
           </IconButton>
-          {show ? (<div className="components">
+          
+        </Toolbar>
+      </AppBar>
+      {show ? (<div className="components1">
             <Button
               variant="text"
-              style={{ color: "white" }}
+              style={{ color: "black" }}
               className="link-btn"
             >
               Home
             </Button>
             <Button
               variant="text"
-              style={{ color: "white" }}
+              style={{ color: "black" }}
               className="link-btn"
             >
               About
@@ -183,7 +186,7 @@ export default function App() {
               id="basic-button"
               aria-controls="basic-menu"
               aria-haspopup="true"
-              style={{ color: "white" }}
+              style={{ color: "black" }}
               className="link-btn"
               onClick={handleClick}
               endIcon={<KeyboardArrowDownIcon />}
@@ -205,8 +208,6 @@ export default function App() {
               <MenuItem onClick={handleClose}>New Arrivals</MenuItem>
             </Menu>
           </div>):""}
-        </Toolbar>
-      </AppBar>
       <header className="header-content">
         <h2 className="title">Shop in style</h2>
         <p className="sub-title">With this shop homepage template</p>
