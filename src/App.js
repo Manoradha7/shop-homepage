@@ -92,6 +92,8 @@ export default function App() {
   const [show,setShow]=useState('show')
   return (
     <div className="App">
+
+      {/* create appbar for showing the basic function os the page*/}
       <AppBar position="static" className="app-bar">
         <Toolbar variant="dense">
           <Typography variant="h6" color="inherit" component="div">
@@ -167,6 +169,8 @@ export default function App() {
           
         </Toolbar>
       </AppBar>
+
+      {/* Use conditional rendering to show the basic components when the button is click */}
       {show ? "":(<div className="components1">
             <Button
               variant="text"
@@ -213,6 +217,8 @@ export default function App() {
         <p className="sub-title">With this shop homepage template</p>
       </header>
       <div className="products">
+
+        {/* use map function for looping the datas */}
         {product.map((m) => (
           <Product
             image={m.image}
@@ -230,6 +236,7 @@ export default function App() {
   );
 }
 
+// create function components for product 
 function Product({ image, title, rating, price, stock }) {
   return (
     <div className="product-box">
